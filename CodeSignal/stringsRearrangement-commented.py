@@ -2,7 +2,7 @@
 # This solution on CodeSignal: https://app.codesignal.com/arcade/intro/level-7/PTWhv2oWqd6p4AHB9/solutions?solutionId=cNGxjcQ9Mti5fmTNe
 # Time complexity O(n!)
 # Space complexity O(n^2)
-# Commented solution: stringsRearrangement-commented.py
+# Uncommented solution: stringsRearrangement.py
 
 
 # We could have used Python's itertools.permutations function to avoid
