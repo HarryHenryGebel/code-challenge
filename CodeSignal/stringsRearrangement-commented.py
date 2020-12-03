@@ -73,3 +73,6 @@ def test_remaining(this_word, remaining):
 
     # We got through the whole loop without finding a passing list
     return False
+
+
+#  LocalWords:  itertools stringsRearrangement

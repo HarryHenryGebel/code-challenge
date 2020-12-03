@@ -39,3 +39,5 @@ def test_remaining(this_word, remaining):
                 return True
 
     return False
+
+#  LocalWords:  stringsRearrangement
