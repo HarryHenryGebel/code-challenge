@@ -1,3 +1,10 @@
+# CodeSignal problem: https://app.codesignal.com/arcade/intro/level-7/PTWhv2oWqd6p4AHB9
+# This solution on CodeSignal: https://app.codesignal.com/arcade/intro/level-7/PTWhv2oWqd6p4AHB9/solutions?solutionId=cNGxjcQ9Mti5fmTNe
+# Worst case time complexity O(n!)
+# Space complexity O(n^2)
+# Commented solution: stringsRearrangement-commented.py
+
+
 def stringsRearrangement(inputArray):
     for this_word in inputArray:
         remaining = inputArray[:]

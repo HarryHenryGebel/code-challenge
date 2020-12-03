@@ -1,6 +1,13 @@
+# CodeSignal problem: https://app.codesignal.com/arcade/intro/level-7/PTWhv2oWqd6p4AHB9
+# This solution on CodeSignal: https://app.codesignal.com/arcade/intro/level-7/PTWhv2oWqd6p4AHB9/solutions?solutionId=cNGxjcQ9Mti5fmTNe
+# Time complexity O(n!)
+# Space complexity O(n^2)
+# Commented solution: stringsRearrangement-commented.py
+
+
 # We could have used Python's itertools.permutations function to avoid
 # a recursive solution, but I prefer this version, and I think it is a
-# little clearer
+# little clearer.
 def stringsRearrangement(inputArray):
     """Given an array of equal-length strings, return true if they can be
     arranged in any order such that each string is exactly one
@@ -21,6 +28,7 @@ def stringsRearrangement(inputArray):
 
 def almost_same(this_word, next_word):
     """Return true if two words are exactly one character different"""
+
     different = False  # we haven't found any differences yet
     for i in range(len(this_word)):
         if this_word[i] != next_word[i]:
@@ -38,6 +46,7 @@ def test_remaining(this_word, remaining):
     """Without changing the first word, test if the rest of the list can
     be arranged in an order that satisfies the requirements
     """
+
     # This is the terminating condition for the recursive
     # function, we only have one word left in the list, return
     # whether it meets the conditions
