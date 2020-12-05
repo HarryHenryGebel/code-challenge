@@ -166,5 +166,23 @@ structure that doesn't even need to exist in the first place.
 20! = 2,432,902,008,176,640,000<br>
 25! = 15,511,210,043,330,985,984,000,000<br>
 
+Calculations performed using Steel Bank Common Lisp with the following
+factorial function:
+
+```common-lisp
+* (defun ! (n)
+  (if (zerop n)
+      1
+      (* n (! (1- n)))))
+!
+* (! 10)
+3628800
+* (! 20)
+2432902008176640000
+* (! 25)
+15511210043330985984000000
+```
+
+
 <!--  LocalWords:  stringsRearrangement
  -->
