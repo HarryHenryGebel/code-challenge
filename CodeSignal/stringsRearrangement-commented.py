@@ -5,9 +5,6 @@
 # Uncommented solution: stringsRearrangement.py
 
 
-# We could have used Python's itertools.permutations function to avoid
-# a recursive solution, but I prefer this version, and I think it is a
-# little clearer.
 def stringsRearrangement(inputArray):
     """Given an array of equal-length strings, return true if they can be
     arranged in any order such that each string is exactly one
