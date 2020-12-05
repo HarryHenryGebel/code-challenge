@@ -142,7 +142,7 @@ def stringsRearrangement(inputArray):
 
 This is pretty opaque with the inscrutable variable names,
 difficult-to-read formatting, and strange decision to import a module
-inside of a function, but that is not it's problem. Line three is the
+inside of a function, but that is not its problem. Line three is the
 problem; it takes the iterator and makes a list with every
 permutation! With a full 10 word array using the maximum 15 character
 long words provide by the problem constraints this list will take
