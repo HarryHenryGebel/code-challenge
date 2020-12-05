@@ -171,9 +171,9 @@ factorial function:
 
 ```common-lisp
 * (defun ! (n)
-  (if (zerop n)
-      1
-      (* n (! (1- n)))))
+    (if (zerop n)
+        1
+        (* n (! (1- n)))))
 !
 * (! 10)
 3628800
