@@ -173,7 +173,7 @@ factorial function:
 * (defun ! (n)
     (if (zerop n)
         1
-        (* n (! (1- n)))))
+        (* n (! (- n 1)))))
 !
 * (! 10)
 3628800
