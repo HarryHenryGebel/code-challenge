@@ -40,7 +40,8 @@ leaderboards on the code challenge web sites.
 
 Lastly, pull requests are welcome with any corrections, superior
 solutions, solutions to problems not already documented, or solutions
-in other programming languages. If you cannot do a pull request for
+in other programming languages. All solutions should include a
+commentary section in this file. If you cannot do a pull request for
 any reason, you can submit any changes as an issue on GitHub, or email
 them the me, Harry Henry Gebel, at harry@gebel.tech. Please be sure to
 credit yourself in any solutions and commentary you submit,
