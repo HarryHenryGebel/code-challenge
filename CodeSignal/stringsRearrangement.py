@@ -40,4 +40,5 @@ def test_remaining(this_word, remaining):
 
     return False
 
-#  LocalWords:  stringsRearrangement
+#  LocalWords:  stringsRearrangement cNGxjcQ9Mti5fmTNe
+#  LocalWords:  solutionId PTWhv2oWqd6p4AHB9
