@@ -149,13 +149,14 @@ long words provide by the problem constraints this list will take
 approximately 540 megabytes! While obviously CodeSignal provides
 enough memory that this passed all the tests, it is really
 unacceptable to use 540 megabytes of memory on a solution that would
-normally use less than a kilobyte! You can loop over an iterator in
-exactly the same way you loop over a list, and an iterator only takes
-up as much memory as the last permutation, not as much memory as all
-3.6 million permutations as this solution uses. Not to mention the
-list probably took around a half second to produce, that's a lot more
-time out of your precious 4 seconds than you want to spend building a
-data structure that doesn't even need to exist in the first place.
+normally use less than a kilobyte, without providing any increase in
+speed or readability! You can loop over an iterator in exactly the
+same way you loop over a list, and an iterator only takes up as much
+memory as the last permutation, not as much memory as all 3.6 million
+permutations as this solution uses. Not to mention the list probably
+took around a half second to produce, that's a lot more time out of
+your precious 4 seconds than you want to spend building a data
+structure that doesn't even need to exist in the first place.
 
 ## Footnotes
 
