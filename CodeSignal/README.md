@@ -20,7 +20,7 @@ This repository is meant to be a resource for anyone wanting to learn
 more about computer science, algorithms, or solving code
 challenges. While it provides the solutions to real code challenges,
 it is not designed as a cheat sheet; code challenges are a learning
-resource, and if you use this repository to complete theme without
+resource, and if you use this repository to complete them without
 learning anything the only person you will be cheating is yourself.
 
 Each comment provides a link to the problem on the source
