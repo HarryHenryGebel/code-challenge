@@ -28,13 +28,13 @@ website. Ideally, you should complete the problem yourself, and then
 compare it to the solution provided here. If you feel you are
 completely stumped you should read my discussion of the problem, and
 then see if you can complete it yourself with that help. My solution
-is also provide both with and without commentary. You should not look
+is also provided both with and without commentary. You should not look
 at these solutions unless you have completely given up on solving the
 problem.
 
 Finally, a small bit of self-promotion. If you feel my solution, or
-any other solution found on this repository, is more understandable
-than the current top voted solutions, please up-vote it. Let's try to
+any other solution found on this repository is more understandable
+than the currently top-voted solutions, please up-vote it. Let's try to
 get the opaque, barely readable solutions knocked off the top of the
 leaderboards on the code challenge web sites.
 
@@ -43,7 +43,7 @@ solutions, solutions to problems not already documented, or solutions
 in other programming languages. All solutions should include a
 commentary section in this file. If you cannot do a pull request for
 any reason, you can submit any changes as an issue on GitHub, or email
-them the me, Harry Henry Gebel, at harry@gebel.tech. Please be sure to
+them to me, Harry Henry Gebel, at harry@gebel.tech. Please be sure to
 credit yourself in any solutions and commentary you submit,
 submissions that do not give themselves proper credit will not be
 merged.
@@ -66,24 +66,24 @@ any order such that each word in the sequence is exactly one character
 different than the preceding word. Return true if at least one such
 sequence exists.
 
-This is an interesting problem, because as far as I can tell the
+This is an interesting problem because as far as I can tell the
 optimal solutions all have factorial<sup>[1](#factorial)</sup> time
 complexity. Most solutions had quadratic<sup>[2](#quadratic)</sup>
 space complexity (although one of the other solutions had factorial
 space complexity as well!) The unusually high time complexity of the
 solution is probably the reason that the constraints limit the number
-of words in the array to 10, this holds the worst case maximum number
+of words in the array to 10, this holds the worst-case maximum number
 of permutations down to around 3.6
 million.<sup>[3](#10-factorial)</sup> Most CodeSignal problems provide
 input arrays with thousands of elements for the larger hidden tests,
-but that is because most CodeSignal problems to not have an inherent
+but that is because most CodeSignal problems do not have an inherent
 factorial time complexity. Still, even with the small input size, we
 must be as efficient as possible to finish with the time limit (4
 seconds for Python) with a full 10 element input array.
 
 This question requires you to examine every permutation (every
 possible arrangement) of the input array elements to see if one meets
-the test conditions. An list of items has a number of permutations
+the test conditions. A list of items has a number of permutations
 equal to the factorial of the number of items in the list. Factorials
 grow extremely quickly, the 10 word maximum in this problem's
 constraints has 3.6 million permutations. This can be solved in a few
@@ -92,8 +92,8 @@ quintillion permutation, meaning that if you could check 1 billion
 permutations per second the function call would take 77 years to
 return. Add just 5 more words would bring the total number of
 permutations to 15 septillion, and at a billion permutations per
-second the function would take almost 492 million years to
-return. Obviously, the input of functions with factorial time
+second, the function would take almost 492 million years to
+return. The input of functions with factorial time
 complexity must be kept as short as possible.
 
 There are several options for this solution that can complete in the 4
@@ -113,8 +113,7 @@ while the recursive solution will not check any permutations that have
 already been proven false due to sharing a proven false set of first
 several words. The input limit of 10 words, while guaranteeing that
 the problem can be completed within CodeSignal's time limit, also
-means that there is no danger of the recursive solution exceeding the
-capacity of the stack, the largest worry when using a recursive
+means that there is no danger of the recursive solution exceeding the capacity of the stack, the largest worry when using a recursive
 function in a language like Python that does not feature tail call
 optimization.
 
@@ -144,17 +143,17 @@ This is pretty opaque with the inscrutable variable names,
 difficult-to-read formatting, and strange decision to import a module
 inside of a function, but that is not its problem. Line three is the
 problem; it takes the iterator and makes a list with every
-permutation! With a full 10 word array using the maximum 15 character
-long words provide by the problem constraints this list will take
-approximately 540 megabytes! While obviously CodeSignal provides
-enough memory that this passed all the tests, it is really
+permutation! With a full 10-word array using the maximum 15 character
+long words provided by the problem constraints, this list will take
+approximately 540 megabytes! While it is clear that CodeSignal
+provides enough memory that this passed all the tests, it is
 unacceptable to use 540 megabytes of memory on a solution that would
-normally use less than a kilobyte, without providing any increase in
-speed or readability! You can loop over an iterator in exactly the
-same way you loop over a list, and an iterator only takes up as much
-memory as the last permutation, not as much memory as all 3.6 million
+normally use less than a kilobyte without providing any increase in
+speed or readability! You can loop over an iterator in the same way
+you loop over a list, and an iterator only takes up as much memory as
+the last permutation, not as much memory as all 3.6 million
 permutations as this solution uses. Not to mention the list probably
-took around a half second to produce, that's a lot more time out of
+took around a half-second to produce, that's a lot more time out of
 your precious 4 seconds than you want to spend building a data
 structure that doesn't even need to exist in the first place.
 
