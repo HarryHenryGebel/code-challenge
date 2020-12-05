@@ -170,10 +170,10 @@ Calculations performed using Steel Bank Common Lisp with the following
 factorial function:
 
 ```common-lisp
-* (defun ! (n)
+* (defun ! (n &optional (acc 1))
     (if (zerop n)
-        1
-        (* n (! (- n 1)))))
+        acc
+        (! (- n 1) (* acc n))))
 !
 * (! 10)
 3628800
