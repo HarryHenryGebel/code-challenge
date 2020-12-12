@@ -32,7 +32,6 @@ def fibonacciSimpleSum(number):
         # our set of Fibonacci numbers.
         if target in numbers or target == this_number:
             return True
-        else:
 
         # advance to the next Fibonacci number.
         next_number = last_number + this_number
