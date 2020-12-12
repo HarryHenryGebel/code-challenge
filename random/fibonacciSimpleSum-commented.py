@@ -1,6 +1,9 @@
 def fibonacciSimpleSum(number):
-    """Determine if a number is the sum of two Fibonacci numbers. Return
-True if it is, otherwise return False."""
+    """Determine if a number is the sum of two Fibonacci numbers
+(including adding a Fibonacci Number to itself). Return True if it is,
+otherwise return False.
+
+    """
 
     # 0, 1, 2, and 3 are Fibonacci numbers, and all Fibonacci numbers
     # pass because 0 is a Fibonacci number, and x + 0 = x, 4 passes
